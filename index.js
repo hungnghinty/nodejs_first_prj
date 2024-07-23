@@ -11,7 +11,7 @@ const hostname =  process.env.HOST_NAME ;
 configViewEngine(app);
 expressStatiConfig(app);
 
-app.use('/v1',webRoutes)
+app.use('/',webRoutes)
 
 app.listen(port,hostname, () => {
   console.log(`Example app listening on port ${port}`)
